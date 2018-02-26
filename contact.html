@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
-  <body class="home">
+  <body class="contact">
     <div class="menu-icon"><i id="fa-bars"class="fas fa-bars"></i></div>
     <section id="menu">
       <nav>
@@ -24,7 +24,7 @@
       <div class="logo">David</div>
       <div class="info-box">
         <h4>Email</h4>
-        <p>dave.donaldson32<br>@gmail.com</p>
+        <p>dave.donaldson32@gmail.com</p>
         <h4>Phone</h4>
         <p>443-390-8623</p>
         <h4>Find Me On</h4>
@@ -38,21 +38,33 @@
     </section>
      <section class="content-area">
       <div class="img-container">
-        <div class="user-img"></div>
+        <div class="form-section">
+          <h4>Send A Message</h4>
+          <form action="/" method="post">
+          <input type="text" name="name" placeholder="your name" required>
+          <input type="email" name="email" placeholder="your email" required>
+          <input type="text" name="budget" placeholder="Optional: select your budget range">
+          <textarea name="message" id="" rows="10" placeholder="your message" required></textarea>
+          <button type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
-      <div class="profile-section">
-        <div class="profile">
-          <h1>David <br>
-            <span>Donaldson</span></h1>
-          <h5>Web Developer</h5>
-          <p>Bacon ipsum dolor amet short ribs turkey bacon brisket cupim pork short loin ham tongue kevin shoulder hamburger ribeye boudin.
-          Biltong short loin drumstick frankfurter boudin, hamburger flank.</p>
-          
-          
-          <a href="/work.html" class="primary-btn">Portfolio</a>
-          <a href="/resume.html" class="ghost-btn">Resume</a>
-          <a href="/contact.html" class="ghost-btn">Contact</a>
-            
+      <div class="contact-section">
+          <div class="contact-info">
+            <h1>contact us</h1>
+            <div class="contact-box">
+              <h5>Phone</h5>
+              <p>(452) 622 4378</p>
+            </div>
+            <div class="contact-box">
+              <h5>Email</h5>
+              <p>dave.donaldson32@yahoo.com</p>
+            </div>
+            <div class="contact-box">
+              <h5>Address</h5>
+              <p>3212 Pine Crest Ct, Abingdon MD
+                21009</p>
+            </div>
         </div>
       </div>
      </section>
