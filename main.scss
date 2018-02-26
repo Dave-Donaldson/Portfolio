@@ -1,0 +1,190 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "variables";
+@import "infoSection";
+@import "home";
+@import "resume";
+@import "work";
+@import "contact";
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 18px;
+  // background:$blueDark;
+  font-family: 'Titillium Web', sans-serif;
+  height:100%;
+  // overflow:hidden;
+}
+
+.menu-icon {
+  position:fixed;
+  right: 36px;
+  top: 36px;
+  padding: 20px;
+  z-index: 11;
+
+  #fa-bars {
+    font-size: 2rem;
+    color:$blueDark;
+
+  }
+}
+
+.primary-btn {
+  text-decoration: none;
+  border:2px solid $blueDark;
+  background:$blueDark;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: $whiteOff;
+  padding:15px 30px;
+  display:inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+  transition:all .2s ease-in-out;
+  &:hover {
+    color:$hoverColor;
+    border-color:$hoverColor;
+  }
+  
+  
+}
+
+.ghost-btn {
+  text-decoration: none;
+   border: 4px solid $greyDark;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: $greyDark;
+  padding: 12px 27px;
+  margin-right: 15px;
+  display:inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition:all .3s ease-in-out;
+
+   &:hover {
+    border-color:$hoverColor;
+    color:$hoverColor;
+  }
+  
+  
+}
+
+.primary-btn, .ghost-btn {
+        margin-bottom: 20px;
+        margin-right: 15px;
+      } // end .primary-btn, ghost-btn
+
+#menu {
+  background:$blueDark;
+  position: fixed;
+  width:100%;
+  top:0;
+  bottom:0;
+  transform: translate3d(-100%,0,0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  nav{
+    width:400px;
+    text-align: center;
+    a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display:block;
+      text-decoration: none;
+      color:white;
+      &:hover {
+        color: $greyLightest;
+       }
+      }
+    }
+  }
+
+
+
+.menu-active {
+    .menu-icon {
+      #fa-bars {
+        color: white;
+      }
+    }
+    #menu {
+    width:100%;
+    top:0;
+    bottom:0;
+    transform: translate3d(0,0,0);
+    }
+ 
+} 
+
+.scroll-section {
+  height:100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:56px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

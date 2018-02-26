@@ -1,0 +1,97 @@
+.resume{
+
+  .info-section {
+    padding:32px;
+    width:20%;
+    } // end .resume .info-section
+ 
+  .content-area{
+  margin-left: 20%;
+  width:80%;
+  min-width:300px;
+  background: white;
+  height:100%;
+  overflow:hidden;
+
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin:56px;
+  } // end .resume .content-area h1
+  
+
+  .xp-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 56px;
+    grid-row-gap: 30px;
+    max-width: 1000px;
+    overflow:hidden;
+    
+    .xp-box {
+      padding: 30px;
+      transition: all .5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+      -webkit-box-shadow: 0 20px 74px 6px rgba(0,0,0,0.20);
+      -moz-box-shadow: 0 20px 74px 6px rgba(0,0,0,0.20);
+      box-shadow: 0 20px 74px 6px rgba(0,0,0,0.20);
+      } // end .resume .content-area .xp-section .xp-box :hover
+      h5 {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-bottom: 1.4rem;
+      } // end .resume .content-area .xp-section .xp-box h5
+      p {
+        font-weight: 300;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      } // end .resume .content-area .xp-section .xp-box p
+    } // end .resume .content-area .xp-section .xp-box 
+
+  } // end .resume .content-area .xp-section 
+
+  .category {
+    margin-bottom: 56px;
+    h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin:56px;
+    } // end .resume .content-area .category h1
+    
+  
+    .xp-section {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 56px;
+      grid-row-gap: 30px;
+      max-width: 1000px;
+      overflow:hidden;
+      
+      .xp-box {
+        padding: 30px;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+        -webkit-box-shadow: 0 20px 74px 6px rgba(0,0,0,0.20);
+        -moz-box-shadow: 0 20px 74px 6px rgba(0,0,0,0.20);
+        box-shadow: 0 20px 74px 6px rgba(0,0,0,0.20);
+        } // end .resume .content-area .category .xp-section .xp-box :hover 
+        h5 {
+          font-weight: 500;
+          font-size: 1.3rem;
+          margin-bottom: 1.4rem;
+        } // end .resume .content-area .category .xp-section .xp-box h5
+        p {
+          font-weight: 300;
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        } // end .resume .content-area .category .xp-section .xp-box p
+      } // end .resume .content-area .category .xp-section .xp-box
+  
+    } // end .resume .content-area .category .xp-section 
+  } // end .resume .content-area .category
+  } // end .resume .content-area 
+ } // end .resume
