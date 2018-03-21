@@ -1,6 +1,7 @@
 .home{
    background: $blueDark;
    overflow:scroll;
+   overflow-x:hidden;
 .info-section {
   padding:56px;
   width:35%;
@@ -11,6 +12,53 @@
   background: white;
   height:100%;
   // padding:0 0 0 25%;
+      .menu-active {
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      .menu-icon {
+        #fa-bars {
+          color: white;
+          cursor: pointer;
+        }
+    }
+    #menu {
+    opacity:1;
+    width:100%;
+    top:0;
+    bottom:0;
+    transform: translate3d(0,0,0);
+    }
+ 
+} 
+
+#menu {
+  background:$blueDark;
+  float:left;
+  width:100%;
+  height:100%;
+  top:0;
+  bottom:0;
+  // transform: translate3d(-100%,0,0);
+  // z-index: 10;
+  // display:none;
+  // opacity: 1;
+  // transition: all .5s ease-in-out;
+  nav{
+    width:400px;
+    text-align: center;
+    a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display:block;
+      text-decoration: none;
+      color:white;
+      &:hover {
+        color: $greyLightest;
+       }
+      }
+    }
+  }
 .img-container {
    display: inline-block;
     width: 30%;
@@ -21,8 +69,8 @@
     top:56px;
     left:-150px;
     width: 100%;
-     height: calc(100% - 112px);
-    background: url("https://i.pinimg.com/736x/4e/a2/18/4ea21824f39c64c733ff8c8bef1240e3--unique-faces-model-face.jpg") 
+    height: calc(100% - 112px);
+    background: url("https://scontent-lga3-1.cdninstagram.com/vp/91c070948e2ddb9a09db43fc7d4cd180/5B362FB7/t51.2885-15/s640x640/sh0.08/e35/29088876_408552642939598_9071477602148941824_n.jpg") 
      no-repeat center center; 
      -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -42,7 +90,7 @@
     max-width: 500px;
     .profile {
     width: 100%;
-    display: inline-block;
+    // display: inline-block;
     float: right;
     padding: 20% 20px 0;
      h1 {

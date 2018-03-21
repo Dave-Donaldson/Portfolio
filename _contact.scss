@@ -1,19 +1,26 @@
 .contact{
+  background: $blueDark;
+   overflow:scroll;
+  .menu-icon{
+    #fa-bars{
+      color:$hoverColor;
+    }
+  }
  .info-section {
   padding:56px;
-  width:40%;
+  width:35%;
   } // end .info-section
  
  .content-area{
-  margin-left: 40%;
-  width:60%;
+  margin-left: 35%;
+  width:65%;
   background: white;
   height:100%;
   // padding:0 0 0 25%;
   } // end .content-area
   .img-container {
    display:inline-block;
-   width:40%;
+   width:30%;
    position: relative;
    height:100%;
    
@@ -22,8 +29,8 @@
     overflow-x:hidden;
     position:absolute;
     top:56px;
-    left:-280px;
-    width: 580px;
+    left:-150px;
+    width: 100%;
      height: calc(100% - 112px);
      padding:46px;
     background: $greyDark;
@@ -75,8 +82,9 @@
    .contact-section {
     vertical-align: top;
     // display:inline-block;
+    background:white;
     padding: 46px;
-    width: 60%;
+    width: 100%;
     float:right;
     
 
@@ -130,6 +138,7 @@
 
       #fa-bars {
         color:white;
+        cursor: pointer;
 
       }
 
@@ -154,30 +163,29 @@
     .content-area{
       margin-left:0;
       width:100%;
-      &:after {
+     &:after {
         content: "";
         display: table;
         clear: both;
-      }
+      }  
       .img-container{
-      padding:56px 20px 0;
+        width:100%;
+        padding:56px 20px 0;
+        height:auto;
+        background:white;
     .form-section{
       position:static;
       width:100%;
+      height:auto;
+      overflow:auto;
        }//end .form-section
       }//end .img-container
       
-      .profile-section{
-        width:70%;
-        float: right;
+      .contact-section{
+        width:100%;
+        float: left;
         padding:20% 20px 0;
-      }
-
-      &:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+        } // end of contact-section
       
     }//end .content-area
   }//end .contact
@@ -185,18 +193,36 @@
 //tablet start 
 @media (min-width: 768px) and (max-width: 991px) {
   .contact{
+    .info-section {
+        .icon-section {
+          a {
+            font-size: 1.4rem;
+          } //end of .info-section .icon-section a
+        } // end icon-section
+      } // end info-section
     .content-area{
-      .profile-section{
-        width:70%;
-        float: right;
-        padding:20% 20px 0;
+      height:auto;
+      
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
       }
       .img-container{
+        width:100%;
         padding:56px 20px 0;
+        height:auto;
         .form-section{
           position:static !important;
           width:100%;
+          height:auto;
+          overflow:auto;
         }//end .form-section
+        .contact-section{
+        width:70%;
+        float: left;
+        padding:20% 20px 0;
+      }//end contact-section
       }//end .img-container
     }//end .content-area
   }//end .contact   
@@ -204,17 +230,44 @@
 //laptop start
 @media (min-width: 992px) and (max-width:1199px) {
     .contact{
+      //   .menu-icon{
+      // top:-3px;
+      // right:20px;
+      // color:white;
+
+      // #fa-bars {
+      //   color:white;
+      //   }
+      // }
+      .info-section {
+        .icon-section {
+          a {
+            font-size: 1.4rem;
+          } //end of .info-section .icon-section a
+        } // end icon-section
+      } // end info-section
     .content-area{
+      height:auto;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
       .img-container{
         padding:56px 20px 0;
         float: left;
+        height:auto;
+        width:100%;
         .form-section{
-          // width:300px;
           position:static !important;
           width:100%;
+          float:left;
+          height:auto;
+          overflow:auto;
         }//end .form-section
       }//end .img-container
-      .profile-section{
+      .contact-section{
         width:70%;
         float: left;
         padding:20% 20px 0;
@@ -223,7 +276,7 @@
       
       
     }//end .content-area
-  } // end .contact
+  }// end .contact
 }// end laptop
 //extra big
 @media (min-width: 1200px) {
@@ -233,12 +286,13 @@
         padding:56px 20px 0;
         float: left;
         .form-section{
-          width:350px;
+          left: -157px;
+          width:400px;
           // position:static !important;
           // width:100%;
         }//end .form-section
       }//end .img-container
-      .profile-section{
+      .contact-section{
         width:70%;
         float: left;
         padding:20% 60px 0;
@@ -248,6 +302,31 @@
     }//end .content-area
   } // end .contact
 }// end extra big 
+
+// start extra extra big
+@media (min-width: 1500px) {
+  .contact{
+    .content-area{
+      .img-container{
+        padding:56px 20px 0;
+        float: left;
+        .form-section{
+          left: -250px;
+          width:500px;
+          // position:static !important;
+          // width:100%;
+        }//end .form-section
+      }//end .img-container
+      .contact-section{
+        width:70%;
+        float: left;
+        padding:20% 60px 0;
+        max-width: 800px;
+      }
+      
+    }//end .content-area
+  } // end .contact
+}// end extra extra big 
 
 //*************End media queries/responsive design**************************
  
