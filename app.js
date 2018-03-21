@@ -1,1 +1,0 @@
-var bars = document.getElementById('faBars').innerHTML;
